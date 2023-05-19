@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 
-const RandomChar = ({word,speed,fontSize}) => {
+const RandomChar = ({word,interval,fontSize}) => {
     const [text,setText]=useState(word)
     const randomChars = "_____()$%^*~@{}][-+".split('')
     //const randomChars = [">","&","*","_","?","<","£","@","-","~","+","!","{","}","[","]","_","_"]
@@ -24,12 +24,12 @@ const RandomChar = ({word,speed,fontSize}) => {
             
             
             
-            },(i+1)*speed)
+            },(i+1)*interval)
         }
         setTimeout(()=>{
              setText((prev)=>word)
                console.log("done")
-        },(lenRandomChars+1)*speed)
+        },(lenRandomChars+1)*interval)
       
      
     },[])

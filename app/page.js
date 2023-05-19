@@ -3,7 +3,7 @@ import ExternalButton from '@/components/buttons/externalButton'
 import PageReloadButton from '@/components/buttons/pageReloadButton'
 import Footer from '@/components/footer/footer'
 import IconGithub from '@/components/icons/social/github'
-import RandomChar from '@/components/randomChar/randomCHar'
+import RandomChar from '@/components/randomChar/randomChar'
 import Intro from '@/components/setup/intro'
 import FillerHalf from '@/components/setup/layout/fillerHalf'
 import FlexRow from '@/components/setup/layout/flexRow'
@@ -22,10 +22,10 @@ export default function Home() {
       <Title name={"React Scramble Reveal"} />
       
       <Intro>
-      <p>A react word <strong>scrambler</strong> for onLoad animations for websites. It takes in 3 variables, the <strong>text</strong>, <strong>font-size</strong> and the <strong>animation speed</strong>. It produces a <strong>random</strong> animation each run.</p>
+      <p>A react word <strong>scrambler</strong> for onLoad animations for websites. It takes in 3 variables, the <strong>text</strong>, <strong>font-size</strong> and the <strong>animation interval</strong>. It produces a <strong>random</strong> animation each run.</p>
       </Intro>
       <OneRem/>
-       <RandomChar word={"product"} speed={50} fontSize={20}/>
+       <RandomChar word={"product"} interval={30} fontSize={20}/>
 
        <OneRem/>
       <FlexRow>
