@@ -442,3 +442,54 @@ footer {
 .paragraph > q {
   text-decoration: underline;
 }
+
+header {
+  display: flex;
+  width: 100%;
+  background-color: var(--bg-2);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--bg-4);
+}
+header > nav {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+.header-img {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--bg-4);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: var(--transition-1);
+  background-color: transparent;
+  background-image: url('../public/images/android-chrome-192x192.png');
+  position: relative;
+  transition: var(--transition-1);
+
+}
+.header-img:hover::after{
+  content:"";
+  background-color: var(--themecolor);
+  background-image: radial-gradient(ellipse,var(--themecolor) 0%, var(--thumbBG) 100%);
+  mix-blend-mode: hard-light;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  opacity: 0.5;
+  
+}
+.header-img:hover {
+  background-color: var(--themecolor);
+  
+}

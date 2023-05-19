@@ -2,6 +2,7 @@ import EmailButton from '@/components/buttons/emailButton'
 import ExternalButton from '@/components/buttons/externalButton'
 import PageReloadButton from '@/components/buttons/pageReloadButton'
 import Footer from '@/components/footer/footer'
+import Header from '@/components/header/header'
 import IconGithub from '@/components/icons/social/github'
 import RandomChar from '@/components/randomChar/randomChar'
 import Intro from '@/components/setup/intro'
@@ -16,7 +17,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
    <>
-   
+   <Header/>
    <main>
     <PageWrapper>
       <Title name={"React Scramble Reveal"} />
