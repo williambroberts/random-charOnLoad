@@ -434,3 +434,11 @@ footer {
   display: inline-block;
   width: 0.5rem;
 }
+
+.paragraph {
+  font-size: var(--font-size-14);
+  color: var(--t-2);
+}
+.paragraph > q {
+  text-decoration: underline;
+}

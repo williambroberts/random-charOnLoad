@@ -36,7 +36,7 @@ const RandomChar = ({word,speed,fontSize}) => {
   return (
     <div className='random-char' style={{fontSize:`${fontSize}px`}}>
        
-        {text.split('').map((char,index)=> (<span>{char}</span>) )}
+        {text.split('').map((char,index)=> (<span key={index}>{char}</span>) )}
     </div>
   )
 }

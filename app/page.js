@@ -35,6 +35,8 @@ export default function Home() {
         <FillerHalf/>
         <PageReloadButton/>
       </FlexRow>
+      <OneRem/>
+      <p className='paragraph'>The relevant  files are <q>randomChar.jsx</q> and <q>randomChar.css</q> </p>
     </PageWrapper>
    
    </main>
